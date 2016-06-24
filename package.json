@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-google-api-socialgraph-hovercard-lookup",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "request": "~2.72.0",
+    "underscore": "~1.8.3"
+  }
+}
