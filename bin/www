@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 var main = require('../main');
 var request = require('request');
-main.process(request, 'a.vinogradov@videal.net', function (error, data) {
-    console.log(data);
+main.process(request, 'a.vinogradov@videal.net', function (error, googlePlusUri) {
+    console.log(googlePlusUri);
 });
