@@ -2,12 +2,10 @@
  * Created by achuyan on 07.02.17.
  */
 var request = require('request');
-var chai = require('chai'),
-    chaiHttp = require('chai-http');
+var chai = require('chai');
 var sinon = require('sinon');
 var expect = chai.expect;
 var EmailChecker = require('../main');
-chai.use(chaiHttp);
 
 var callback = function (error, googlePlusUri) {
     return googlePlusUri;

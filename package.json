@@ -1,6 +1,6 @@
 {
   "name": "nodejs-google-api-socialgraph-hovercard-lookup",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -14,7 +14,6 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
     "mocha": "^3.2.0",
     "sinon": "^1.17.7"
   }
