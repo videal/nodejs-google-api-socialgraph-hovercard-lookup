@@ -1,6 +1,14 @@
 var _ = require('underscore');
+
 module.exports = {
     process: function (request, email, callback) {
+        if(!callback || typeof callback != 'function') {
+            return null;
+        }
+        console.log(typeof email)
+        if(typeof email != 'string' || !request) {
+            callback(undefined, null);
+        }
         var uri = 'https://apis.google.com/u/0/_/socialgraph/lookup/hovercards/?rt=j';
         email = encodeURIComponent("[[[" + email + "]]]");
         request.post({
