@@ -1,11 +1,12 @@
 var _ = require('underscore');
 
 module.exports = {
-    process: function (request, email, callback) {
+    process: function (request, email, proxy, callback) {
         var uri = 'https://apis.google.com/u/0/_/socialgraph/lookup/hovercards/?rt=j';
         email = encodeURIComponent("[[[" + email + "]]]");
         request.post({
             url: uri,
+            proxy: proxy,
             body: "m=" + email,
             headers: {
                 'content-type': 'application/x-www-form-urlencoded'

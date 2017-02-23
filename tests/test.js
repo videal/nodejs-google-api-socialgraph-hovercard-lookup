@@ -23,10 +23,10 @@ describe('EmailChecker:', function() {
             expect(EmailChecker.process()).to.be.null;
         });
         it('should return null if type of email arguments is wrong', function() {
-            expect(EmailChecker.process(request, [], callback)).to.be.undefined;
+            expect(EmailChecker.process(request, [], null, callback)).to.be.undefined;
         });
         it('should return null if callback is not a function', function() {
-            expect(EmailChecker.process(request, 'email', 'callback')).to.be.null;
+            expect(EmailChecker.process(request, 'email', 'proxy', 'callback')).to.be.null;
         });
     });
 });
