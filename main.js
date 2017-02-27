@@ -14,6 +14,7 @@ module.exports = {
         }, function (error, response, body) {
             if(error) {
                 callback(error, null);
+                return;
             }
             var parsed = '' + body;
             // Fix corrupt JSON coming from the service
