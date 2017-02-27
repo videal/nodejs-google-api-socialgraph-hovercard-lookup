@@ -12,6 +12,9 @@ module.exports = {
                 'content-type': 'application/x-www-form-urlencoded'
             }
         }, function (error, response, body) {
+            if(error) {
+                callback(error, null);
+            }
             var parsed = '' + body;
             // Fix corrupt JSON coming from the service
             parsed = parsed.replace(')]}\'\n\n', '');
